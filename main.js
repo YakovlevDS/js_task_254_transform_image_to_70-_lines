@@ -62,7 +62,7 @@ fileInput.addEventListener('input', async (e) => {
     resultCtx.fillStyle = '#ffffff'
     resultCtx.fillRect(0, 0, imageWidth, imageHeight)
 
-    for (let y = 0; y < 50; ++y) {
+    for (let y = 0; y < 70; ++y) {
       resultCtx.beginPath()
       resultCtx.lineWidth = 2
       resultCtx.lineJoin = 'round'
@@ -70,7 +70,7 @@ fileInput.addEventListener('input', async (e) => {
       let l = 0;
 
       for (let x = 0; x < imageWidth; ++x) {
-        const c = pix[((y * imageHeight / 50 + 6) * imageWidth + x)*4]
+        const c = pix[((y * imageHeight / 70 + 6) * imageWidth + x)*4]
 
         // points.push([x, y * imageHeight / 50 + 6])
 
@@ -80,7 +80,7 @@ fileInput.addEventListener('input', async (e) => {
 
         resultCtx.lineTo(
           x,
-          (y + 0.5) * imageHeight / 50 + Math.sin(l * Math.PI / 2) * 5 * decel(m)
+          (y + 0.5) * imageHeight / 70 + Math.sin(l * Math.PI / 2) * 5 * decel(m)
         )
       }
       resultCtx.stroke()
