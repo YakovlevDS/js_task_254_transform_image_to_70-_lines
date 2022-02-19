@@ -1,0 +1,26 @@
+#source {
+    display: none;
+    position: fixed;
+    z-index: -1;
+    left: -1000vw;
+  }
+
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Roboto, sans-serif;
+  }
+
+  .subscribe-box {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding: 7px;
+    line-height: 1.5;
+    background: white;
+}
